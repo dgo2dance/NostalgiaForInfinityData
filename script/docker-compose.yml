@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  download-data:
+    image: freqtradeorg/freqtrade:stable
+    container_name: download-data
+    network_mode: host
+    working_dir: /freqtrade
+    volumes:
+      - ..:/freqtrade/user_data/data
+    entrypoint: ["bash", "/freqtrade/user_data/data/script/download-one.sh"]
