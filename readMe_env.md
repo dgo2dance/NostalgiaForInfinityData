@@ -16,6 +16,10 @@ Terminal
 # For bash/zsh/etc.
 source env/bin/activate
 
+pip install -r pandas
+pip install pyarrow 
+
+
 # For fish
 source env/bin/activate.fish
 Upgrade pip to the latest version:

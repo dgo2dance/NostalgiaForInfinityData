@@ -22,6 +22,7 @@ for envfile in /freqtrade/backtesting-*.env; do
   source "${envfile}"
   set +a
 
+
   # 检查必要变量是否存在
   if [[ -z "${START_DATE:-}" || -z "${END_DATE:-}" || -z "${EXCHANGE:-}" || -z "${TRADINGMODE:-}" ]]; then
     echo "❌  文件 ${envfile} 中缺少 START_DATE/END_DATE/EXCHANGE/TRADINGMODE，跳过"
