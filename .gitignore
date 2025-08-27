@@ -4,3 +4,5 @@ hyperopts
 logs
 notebooks
 plot
+.env
+/env
