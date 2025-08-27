@@ -5,4 +5,5 @@ logs
 notebooks
 plot
 .env
+.env-back
 /env
